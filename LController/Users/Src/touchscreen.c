@@ -8,7 +8,6 @@
 #include "app_state.h"
 #include "app_init.h"
 
-Queue *TJCMsgQueue;
 TjcMsg tjcMsg = {.getEnd= true ,.getHead= false ,.head= 0 ,.endIndex=0 ,.tempData= {0} };
 uint8_t msgSendTemp[50];
 uint8_t TxtmsgSendTemp[50];

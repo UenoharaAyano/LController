@@ -1,5 +1,5 @@
-#ifndef TJC_H
-#define TJC_H
+#ifndef TOUCHSCREEN_H
+#define TOUCHSCREEN_H
 
 #include "main.h"
 #include "stdbool.h"
