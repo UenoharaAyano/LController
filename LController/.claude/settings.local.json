@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\\\Users\\\\akemam\\\\STM32Cube\")",
+      "Bash(dir /s /b \"C:\\\\STM32Cube\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\akemam\\\\Desktop\\\\LController\")",
+      "Bash(dir /s /b \"C:\\\\\" 2>nul | grep -i \"startup_stm32f405xx\" | head -10)",
+      "Bash(where cube *)",
+      "Bash(where STM32CubeMX)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/STMicroelectronics/**)",
+      "Bash(dir /s /b \"C:\\\\Users\\\\akamem\\\\STM32Cube\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\akamem\\\\Cube\")",
+      "Read(//c/Users/akamem/**)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/FreeRTOS/FreeRTOS-Kernel/V10.3.1/portable/GCC/ARM_CM4F/port.c\" -o \"/tmp/freertos_port.c\")",
+      "Read(//tmp/**)",
+      "Bash(cp \"C:/Users/akamem/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/gcc/startup_stm32f405xx.s\" \"C:/Users/akamem/Desktop/LController/MDK-ARM/startup_stm32f405xx.s\")",
+      "Bash(cp \"C:/Users/akamem/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c\" \"C:/Users/akamem/Desktop/LController/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c\")",
+      "Bash(cp \"C:/Users/akamem/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h\" \"C:/Users/akamem/Desktop/LController/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h\")",
+      "Bash(cp \"C:/Users/akamem/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.3/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c\" \"C:/Users/akamem/Desktop/LController/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c\")",
+      "Bash(grep -v \"/.$\")",
+      "Bash(sed -i.bak -e 's/<FileName>keyboard\\\\.c/<FileName>input.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\keyboard\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\input.c/g' -e 's/<FileName>tjc\\\\.c/<FileName>touchscreen.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\tjc\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\touchscreen.c/g' -e 's/<FileName>st7735\\\\.c/<FileName>tft_driver.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\st7735\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\tft_driver.c/g' -e 's/<FileName>LCD\\\\.c/<FileName>screen_ui.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\LCD\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\screen_ui.c/g' -e 's/<FileName>data_process\\\\.c/<FileName>uart_protocol.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\data_process\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\uart_protocol.c/g' -e 's/<FileName>msg_type\\\\.c/<FileName>robot_msg.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\msg_type\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\robot_msg.c/g' -e 's/<FileName>msg_queue\\\\.c/<FileName>fifo_queue.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\msg_queue\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\fifo_queue.c/g' -e 's/<FileName>Start\\\\.c/<FileName>app_init.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\Start\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\app_init.c/g' -e 's/<FileName>Variables\\\\.c/<FileName>app_state.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\Variables\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\app_state.c/g' -e 's/<FileName>utility\\\\.c/<FileName>filter.c/g' -e 's/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\utility\\\\.c/<FilePath>..\\\\\\\\Users\\\\\\\\Src\\\\\\\\filter.c/g' CubeMx_Test.uvprojx)",
+      "Bash(rm CubeMx_Test.uvprojx.bak)",
+      "Bash(sed -i -e 's/<FileName>st7735\\\\.c</<FileName>tft_driver.c</g' -e 's/<FileName>keyboard\\\\.c</<FileName>input.c</g' -e 's/<FileName>utility\\\\.c</<FileName>filter.c</g' -e 's/<FileName>msg_type\\\\.c</<FileName>robot_msg.c</g' -e 's/<FileName>data_process\\\\.c</<FileName>uart_protocol.c</g' -e 's/<FileName>msg_queue\\\\.c</<FileName>fifo_queue.c</g' -e 's/<FileName>tjc\\\\.c</<FileName>touchscreen.c</g' -e 's/<FileName>Variables\\\\.c</<FileName>app_state.c</g' -e 's/<FileName>LCD\\\\.c</<FileName>screen_ui.c</g' -e 's/<FileName>Start\\\\.c</<FileName>app_init.c</g' CubeMx_Test.uvprojx)",
+      "Bash(sed -i -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\st7735\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\tft_driver.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\keyboard\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\input.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\utility\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\filter.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\msg_type\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\robot_msg.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\data_process\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\uart_protocol.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\msg_queue\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\fifo_queue.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\tjc\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\touchscreen.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\Variables\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\app_state.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\LCD\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\screen_ui.c|g' -e 's|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\Start\\\\.c|Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\app_init.c|g' CubeMx_Test.uvprojx)",
+      "Bash(grep \"Users\\\\\\\\\\\\\\\\Src\\\\\\\\\\\\\\\\\" MDK-ARM/CubeMx_Test.uvprojx)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\akamem\\STM32Cube\\Repository\\STM32Cube_FW_F4_V1.28.3\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Source\\Templates\\gcc",
+      "C:\\Users\\akamem\\STM32Cube\\Repository\\STM32Cube_FW_F4_V1.28.3\\Drivers\\STM32F4xx_HAL_Driver\\Src"
+    ]
+  }
+}

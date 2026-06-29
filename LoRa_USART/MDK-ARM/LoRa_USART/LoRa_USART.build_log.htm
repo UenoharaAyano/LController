@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: megumi akamem, Rhodes Island Pharmaceutical Inc., LIC=0VRJ7-EU7DD-YDNK5-GYW5Y-6VJYJ-RD16C
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.40.0.3
+Toolchain Path:  C:\Users\akamem\AppData\Local\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\akamem\Desktop\LoRa_USART\MDK-ARM\LoRa_USART.uvprojx
+Project File Date:  06/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Users\akamem\AppData\Local\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'LoRa_USART'
+assembling startup_stm32f072xb.s...
+compiling crc.c...
+compiling sx126x.c...
+compiling main.c...
+compiling gpio.c...
+compiling sx126x-board.c...
+compiling stm32f0xx_it.c...
+compiling radio.c...
+../radio/radio.c(506): warning:  #188-D: enumerated type mixed with another type
+      SX126xSetRegulatorMode( regulatorMode );
+../radio/radio.c(564): warning:  #177-D: variable "rssi"  was declared but never referenced
+      int16_t rssi = 0;
+../radio/radio.c(565): warning:  #177-D: variable "carrierSenseTime"  was declared but never referenced
+      uint32_t carrierSenseTime = 0;
+../radio/radio.c(667): warning:  #167-D: argument of type "volatile ModulationParams_t *" is incompatible with parameter of type "ModulationParams_t *"
+              SX126xSetModulationParams( &SX126x.ModulationParams );
+../radio/radio.c(668): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+              SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(719): warning:  #167-D: argument of type "volatile ModulationParams_t *" is incompatible with parameter of type "ModulationParams_t *"
+              SX126xSetModulationParams( &SX126x.ModulationParams );
+../radio/radio.c(720): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+              SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(765): warning:  #167-D: argument of type "volatile ModulationParams_t *" is incompatible with parameter of type "ModulationParams_t *"
+              SX126xSetModulationParams( &SX126x.ModulationParams );
+../radio/radio.c(766): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+              SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(813): warning:  #167-D: argument of type "volatile ModulationParams_t *" is incompatible with parameter of type "ModulationParams_t *"
+              SX126xSetModulationParams( &SX126x.ModulationParams );
+../radio/radio.c(814): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+              SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(881): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+      SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(1024): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+          SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c(1031): warning:  #167-D: argument of type "volatile PacketParams_t *" is incompatible with parameter of type "PacketParams_t *"
+              SX126xSetPacketParams( &SX126x.PacketParams );
+../radio/radio.c: 14 warnings, 0 errors
+compiling spi.c...
+compiling dma.c...
+compiling stm32f0xx_hal_msp.c...
+compiling usart.c...
+compiling app_bridge.c...
+compiling myRadio.c...
+compiling stm32f0xx_hal_spi_ex.c...
+compiling myRadio_gpio.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling stm32f0xx_hal_spi.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_dma.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling stm32f0xx_hal_exti.c...
+compiling stm32f0xx_hal_uart_ex.c...
+compiling system_stm32f0xx.c...
+compiling stm32f0xx_hal_uart.c...
+linking...
+Program Size: Code=28588 RO-data=868 RW-data=312 ZI-data=3432  
+FromELF: creating hex file...
+".\LoRa_USART\LoRa_USART.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F0xx_DFP.3.1.1.pack
+                Keil::STM32F0xx_DFP@3.1.1
+                STMicroelectronics STM32F0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_LoRa_USART
+  C:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>

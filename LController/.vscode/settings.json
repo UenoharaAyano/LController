@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "compare": "cpp",
+    "stdbool.h": "c",
+    "usart.h": "c",
+    "bw.h": "c",
+    "tjc.h": "c",
+    "limits": "c",
+    "main.h": "c",
+    "msg_queue.h": "c",
+    "data_process.h": "c",
+    "msg_type.h": "c",
+    "freertos.h": "c",
+    "utility.h": "c",
+    "string.h": "c",
+    "stm32f4xx_hal_def.h": "c"
+  }
+}

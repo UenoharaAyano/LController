@@ -1,0 +1,18 @@
+*** Using Compiler 'V6.12', folder: 'A:\Keil\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'CubeMx_Test'
+../Users/Src/data_process.c(85): warning: expression result unused [-Wunused-value]
+            crc >> 1;
+            ~~~ ^  ~
+1 warning generated.
+compiling data_process.c...
+compiling keyboard.c...
+../Core/Src/freertos.c(37): warning: In file included from...../Users/Inc\tjc.h(14): warning: backslash and newline separated by space [-Wbackslash-newline-escape]
+    HEAD(click, 0x65)  \ 
+                        ^
+1 warning generated.
+compiling freertos.c...
+linking...
+Program Size: Code=29458 RO-data=14174 RW-data=320 ZI-data=23712  
+FromELF: creating hex file...
+"CubeMx_Test\CubeMx_Test.axf" - 0 Error(s), 2 Warning(s).
+Build Time Elapsed:  00:00:01
