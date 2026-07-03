@@ -112,32 +112,32 @@ void R1C1dualswitch_deal(TjcMsg *tjcMsg)
 		Press(Protect);
         dualswitchvalIndex = 0;
         return;
-    case 3:
-        Press(Zero);
-        dualswitchvalIndex = 0;
-        return;
-    case 4:
+	case 3:
 		Press(InstPro);
         dualswitchvalIndex = 0;
         return;
-	case 5:
+	case 4:
 		Press(takeplan);
 		dualswitchvalIndex = 0;
 		return;
-	case 6:
+	case 5:
 		Press(ArmStand);
 		dualswitchvalIndex = 0;
 		return;
-	case 7:
+	case 6:
 		Press(MoveWeap);
 		dualswitchvalIndex = 0;
 		return;
-	case 8:
+	case 7:
 		Press(ThrowWeap);
 		dualswitchvalIndex = 0;
 		return;
-	case 9:
+	case 8:
 		Press(Trace);
+		dualswitchvalIndex = 0;
+		return;
+	case 36:
+		BoolChange(Reverse, !Boolback(Reverse));
 		dualswitchvalIndex = 0;
 		return;
 	case 10:
@@ -194,7 +194,7 @@ void R1C2dualswitch_deal(TjcMsg *tjcMsg)
 		dualswitchvalIndex = 0;
 		return;
 	case 6:
-		BoolChange(Auto, !Boolback(Auto));
+		BoolChange(DockState, !Boolback(DockState));
 		dualswitchvalIndex = 0;
 		return;
 	case 7:
@@ -236,7 +236,7 @@ void R1C1val_Deal(TjcMsg *tjcMsg)
 //		}
 		case 3:
 		{
-			memcpy(&r1controlmsg.pilenum, tjcMsg->tempData, 1);
+			memcpy(&r1controlmsg.R2claw, tjcMsg->tempData, 1);
 			msgbackIndex++;
 			break;
 		}
@@ -276,7 +276,7 @@ void R1C2val_Deal(TjcMsg *tjcMsg)
 	{
 		case 1:
 		{
-			memcpy(&r1controlmsg.R2claw, tjcMsg->tempData, 1);
+			memcpy(&r1controlmsg.pilenum, tjcMsg->tempData, 1);
 			msgbackIndex =1;
 			break;
 		}

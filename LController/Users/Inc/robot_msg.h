@@ -21,7 +21,7 @@ typedef enum
 typedef enum
 {
     /*********R1  bool值 */
-  	Zero, 		//回零——[0]
+  	Reverse, 	//反速——[0]
 	Protect, 	//保护
 	Enable, 	//使能
 	Trace,		//寻迹
@@ -60,7 +60,7 @@ typedef enum
 	PrePutCube,	//预放块——[4]
 	ArmReturn,	//臂回零
 	Step,		//步进
-	Auto,		//自动0/1
+	DockState,	//对接状态
 	direction,	//正取类型
 	cubexcha,	//块互递
 	xchaway,	//互递方式

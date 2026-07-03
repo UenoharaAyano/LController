@@ -256,14 +256,14 @@ void joystickLeft_scan()
             if (abs(K * (L1.x - L1val[4]) / range_X_pos) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velX = 0;
             else
-                JScontrolmsg.velX = -K * (L1.x - L1val[4]) / range_X_pos - Dead_zone;
+                JScontrolmsg.velX = -(K * (L1.x - L1val[4]) / range_X_pos - Dead_zone);
         }
         else
         {
             if (abs(K * (L1val[4] - L1.x) / range_X_neg) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velX = 0;
             else
-                JScontrolmsg.velX = K * (L1val[4] - L1.x) / range_X_neg + Dead_zone;
+                JScontrolmsg.velX = K * (L1val[4] - L1.x) / range_X_neg - Dead_zone;
         }
 
         // Y轴控制
@@ -478,7 +478,7 @@ void R1_key_function(uint8_t keynum)
 			r1controlmsg.area=0;
 		else
 			r1controlmsg.area++;
-		valSend(0, r1controlmsg.area);	// 单独向TJC发送显示值，因为统一反馈显示函数需要等flag.TJCvalrefresh才会执行
+		// valSend(0, r1controlmsg.area);	// 单独向TJC发送显示值（已改为LCD显示）
 		osDelay(10);
         break;
     }

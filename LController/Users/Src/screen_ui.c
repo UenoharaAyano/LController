@@ -33,15 +33,17 @@ void R1_Interface()
 {
     LCD_ShowHome();
     JS_mode_show();
-    LCD_DrawRectangle(90, 104, 150, 116, WHITE);
+    // LCD_DrawRectangle(90, 104, 150, 116, WHITE);
 	LCD_ShowString(5, 5, (uint8_t *)"R1",WHITE, BLACK, 12, 0);
-    LCD_ShowString(55, 10, (uint8_t *)"disX:", WHITE, BLACK, 12, 0);
-    LCD_ShowString(55, 30, (uint8_t *)"disY:", WHITE, BLACK, 12, 0);
-    LCD_ShowString(55, 50, (uint8_t *)"Yaw:", WHITE, BLACK, 12, 0);
-    LCD_ShowString(55, 70, (uint8_t *)"Pitch:", WHITE, BLACK, 12, 0);
-    LCD_ShowString(55, 90, (uint8_t *)"YIS:", WHITE, BLACK, 12, 0);
-//    LCD_ShowString(10, 75, (uint8_t *)"RX", WHITE, BLACK, 12, 0);
-//    LCD_ShowString(25, 75, (uint8_t *)"TX", WHITE, BLACK, 12, 0);
+    LCD_ShowString(58, 10, (uint8_t *)"disX:", WHITE, BLACK, 12, 0);
+    LCD_ShowString(58, 30, (uint8_t *)"disY:", WHITE, BLACK, 12, 0);
+    LCD_ShowString(58, 50, (uint8_t *)"Yaw:", WHITE, BLACK, 12, 0);
+    LCD_ShowString(58, 70, (uint8_t *)"Pitch:", WHITE, BLACK, 12, 0);
+    LCD_ShowString(58, 90, (uint8_t *)"YIS:", WHITE, BLACK, 12, 0);
+	LCD_ShowString(58, 108, (uint8_t *)"Area:", WHITE, BLACK, 12, 0);
+    // LCD_ShowString(10, 75, (uint8_t *)"BT", WHITE, BLACK, 12, 0);
+    // LCD_ShowString(25, 75, (uint8_t *)"RX", WHITE, BLACK, 12, 0);
+    // LCD_ShowString(40, 75, (uint8_t *)"TX", WHITE, BLACK, 12, 0);
 }
 void R2_Interface()
 {
@@ -85,12 +87,13 @@ void LCD_flash()
     temp.RxNow = 120 + 20 * JScontrolmsg.angW / Kw;
     if (flag.RobotMode == 0)
     {
-        LCD_ShowFloatNum1(91, 10, r1backmsg.disX, 7, WHITE, BLACK, 12);	// 位数不算符号
-        LCD_ShowFloatNum1(91, 30, r1backmsg.disY, 7, WHITE, BLACK, 12);
-        LCD_ShowFloatNum1(91, 50, r1backmsg.Yaw, 7, WHITE, BLACK, 12);
-        LCD_ShowFloatNum1(91, 70, r1backmsg.pitch, 7, WHITE, BLACK, 12);
-        LCD_ShowFloatNum1(91, 90, r1backmsg.YIS, 7, WHITE, BLACK, 12);
-		}
+        LCD_ShowFloatNum1(98, 10, r1backmsg.disX, 7, WHITE, BLACK, 12);	// 位数不算符号
+        LCD_ShowFloatNum1(98, 30, r1backmsg.disY, 7, WHITE, BLACK, 12);
+        LCD_ShowFloatNum1(98, 50, r1backmsg.Yaw, 7, WHITE, BLACK, 12);
+        LCD_ShowFloatNum1(98, 70, r1backmsg.pitch, 7, WHITE, BLACK, 12);
+        LCD_ShowFloatNum1(98, 90, r1backmsg.YIS, 7, WHITE, BLACK, 12);
+	    LCD_ShowIntNum(98, 108, r1controlmsg.area, 1, WHITE, BLACK, 12);
+	}
     // else
     // {
     //     LCD_ShowFloatNum1(91, 10, r2backmsg.X, 7, WHITE, BLACK, 12);
@@ -98,9 +101,9 @@ void LCD_flash()
     //     LCD_ShowFloatNum1(91, 60, r2backmsg.angle, 7, WHITE, BLACK, 12);
     // }
     Draw_Circle(temp.L1xlast, temp.L1ylast, 1, BLACK);
-    Draw_Circle(temp.Rxlast, 110, 3, BLACK);
     Draw_Circle(temp.L1xNow, temp.L1yNow, 1, LIGHTGREEN);
-    Draw_Circle(temp.RxNow, 110, 3, LIGHTGREEN);
+    // Draw_Circle(temp.Rxlast, 110, 3, BLACK);
+    // Draw_Circle(temp.RxNow, 110, 3, LIGHTGREEN);
     temp.L1xlast = temp.L1xNow;
     temp.L1ylast = temp.L1yNow;
     temp.Rxlast = temp.RxNow;
