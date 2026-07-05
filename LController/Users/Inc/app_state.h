@@ -12,9 +12,9 @@ typedef struct Flag_S
     bool RobotMode; // 0为R1，1为R2
     bool LCDfirstshow; // LCD第一次显示标志
     bool JSfast_slow; // 摇杆快慢切换标志
-		bool JSfast_slow_last;
     bool TJCvalrefresh; // 串口屏数据刷新标志
 		bool TJCpage; // 串口屏页面，0为page1，1为page2
+    bool clawupflag;
 } Flag_S;
 
 typedef struct Temp_S

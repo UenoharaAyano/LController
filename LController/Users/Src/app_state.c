@@ -9,9 +9,9 @@ void FlagInit(void)
 		flag.RobotMode =false;
     flag.LCDfirstshow = true;
     flag.JSfast_slow = true;
-    flag.JSfast_slow_last = false;
     flag.TJCvalrefresh = false;
     flag.TJCpage=false;
+    flag.clawupflag=false;
 }
 void TempInit(void)
 {

@@ -20,14 +20,10 @@ void JS_mode_show()
         LCD_DrawRectangle(0, 32, 50, 48, BLACK);
     }
     // 快慢模式切换显示
-    if (flag.JSfast_slow != flag.JSfast_slow_last || flag.LCDfirstshow)
-    {
-        if (flag.JSfast_slow == 1)		// 快速模式
-            Draw_Circle(25, 40, 15, BLACK);
-        else                          // 慢速模式
-            Draw_Circle(25, 40, 15, BRRED);
-        flag.JSfast_slow_last = flag.JSfast_slow;
-    }
+    if (flag.JSfast_slow == 1)      // 快速模式：隐藏指示圆
+        Draw_Circle(25, 40, 15, BLACK);
+    else                            // 慢速模式：显示BRRED指示圆
+        Draw_Circle(25, 40, 15, BRRED);
 }
 void R1_Interface()
 {
@@ -82,8 +78,8 @@ void status_show()
 void LCD_flash()
 {
     JS_mode_show();
-    temp.L1xNow = 25 + 20 * JScontrolmsg.velY / K;
-    temp.L1yNow = 40 + 20 * JScontrolmsg.velX / K;
+    temp.L1xNow = 25 + 20 * JScontrolmsg.velY / Kv_fast;
+    temp.L1yNow = 40 + 20 * JScontrolmsg.velX / Kv_fast;
     temp.RxNow = 120 + 20 * JScontrolmsg.angW / Kw;
     if (flag.RobotMode == 0)
     {

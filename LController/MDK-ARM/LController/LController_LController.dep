@@ -122,12 +122,12 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x6A3FF6BF)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x6A3FF6BF)
 I (..\Core\Inc\usart.h)(0x6A3FF6B8)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
-I (..\Users\Inc\input.h)(0x6A4095B3)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
+I (..\Users\Inc\input.h)(0x6A4A3E00)
 I (..\Users\Inc\uart_protocol.h)(0x6A3FF6C2)
 I (..\Users\Inc\fifo_queue.h)(0x6A3FF6C1)
-I (..\Users\Inc\touchscreen.h)(0x6A3FF6C2)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\touchscreen.h)(0x6A41D842)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Users\Inc\screen_ui.h)(0x6A40EEB1)
 I (..\Users\Inc\tft_driver.h)(0x6A3FF6C2)
 I (..\radio\myRadio.h)(0x6A3FF6C1)
@@ -1133,15 +1133,15 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
 I (..\Users\Inc\tft_driver.h)(0x6A3FF6C2)
-I (..\Users\Inc\input.h)(0x6A4095B3)
-I (..\Users\Inc\touchscreen.h)(0x6A3FF6C2)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
+I (..\Users\Inc\input.h)(0x6A4A3E00)
+I (..\Users\Inc\touchscreen.h)(0x6A41D842)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
 I (..\Users\Inc\uart_protocol.h)(0x6A3FF6C2)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Users\Inc\screen_ui.h)(0x6A40EEB1)
 I (..\Users\Inc\fifo_queue.h)(0x6A3FF6C1)
-F (../Users/Src/app_state.c)(0x6A4094D4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/app_state.o -MMD)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+F (../Users/Src/app_state.c)(0x6A4A4016)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/app_state.o -MMD)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x6A3FF6BB)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x6A3FF6B7)
@@ -1233,8 +1233,8 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
-F (../Users/Src/input.c)(0x6A410245)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/input.o -MMD)
-I (..\Users\Inc\input.h)(0x6A4095B3)
+F (../Users/Src/input.c)(0x6A4A66E4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/input.o -MMD)
+I (..\Users\Inc\input.h)(0x6A4A3E00)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x6A3FF6BB)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x6A3FF6B7)
@@ -1266,15 +1266,15 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
 I (..\Users\Inc\filter.h)(0x6A3FF6C2)
 I (..\Users\Inc\uart_protocol.h)(0x6A3FF6C2)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
 I (..\Core\Inc\adc.h)(0x6A3FF6B7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x6A3FF6BF)
-I (..\Users\Inc\app_state.h)(0x6A409476)
-I (..\Users\Inc\touchscreen.h)(0x6A3FF6C2)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
+I (..\Users\Inc\touchscreen.h)(0x6A41D842)
 I (..\Users\Inc\screen_ui.h)(0x6A40EEB1)
 I (..\Users\Inc\tft_driver.h)(0x6A3FF6C2)
 F (../Users/Src/robot_msg.c)(0x6A3FF6C2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/robot_msg.o -MMD)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x6A3FF6BB)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x6A3FF6B7)
@@ -1304,7 +1304,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x6A3FF6BF)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x6A3FF6BF)
 I (..\Core\Inc\FreeRTOSConfig.h)(0x6A3FF6B7)
@@ -1316,7 +1316,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x6A3FF6BF
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x6A3FF6C0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x6A3FF6BF)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x6A3FF6BF)
-F (../Users/Src/screen_ui.c)(0x6A40EE4E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/screen_ui.o -MMD)
+F (../Users/Src/screen_ui.c)(0x6A4A3E99)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/screen_ui.o -MMD)
 I (..\Users\Inc\screen_ui.h)(0x6A40EEB1)
 I (..\Users\Inc\tft_driver.h)(0x6A3FF6C2)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
@@ -1348,8 +1348,8 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x6A3FF6BF)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x6A3FF6BF)
 I (..\Core\Inc\FreeRTOSConfig.h)(0x6A3FF6B7)
@@ -1361,7 +1361,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x6A3FF6BF
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x6A3FF6C0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x6A3FF6BF)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x6A3FF6BF)
-I (..\Users\Inc\input.h)(0x6A4095B3)
+I (..\Users\Inc\input.h)(0x6A4A3E00)
 I (..\Users\Inc\app_init.h)(0x6A3FF6C1)
 F (../Users/Src/tft_driver.c)(0x6A3FF6C2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/tft_driver.o -MMD)
 I (..\Users\Inc\tft_driver.h)(0x6A3FF6C2)
@@ -1396,8 +1396,8 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
 I (..\Users\Inc\fonts.h)(0x6A3FF6C2)
 I (..\Core\Inc\spi.h)(0x6A3FF6B7)
-F (../Users/Src/touchscreen.c)(0x6A40946A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/touchscreen.o -MMD)
-I (..\Users\Inc\touchscreen.h)(0x6A3FF6C2)
+F (../Users/Src/touchscreen.c)(0x6A4A40FF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/touchscreen.o -MMD)
+I (..\Users\Inc\touchscreen.h)(0x6A41D842)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x6A3FF6BB)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x6A3FF6B7)
@@ -1429,14 +1429,14 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
 I (..\Core\Inc\usart.h)(0x6A3FF6B8)
 I (..\Users\Inc\fifo_queue.h)(0x6A3FF6C1)
-I (..\Users\Inc\input.h)(0x6A4095B3)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
+I (..\Users\Inc\input.h)(0x6A4A3E00)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x6A3FF6BF)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Users\Inc\app_init.h)(0x6A3FF6C1)
 F (../Users/Src/uart_protocol.c)(0x6A3FF786)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/uart_protocol.o -MMD)
 I (..\Users\Inc\uart_protocol.h)(0x6A3FF6C2)
-I (..\Users\Inc\robot_msg.h)(0x6A3FF6C2)
+I (..\Users\Inc\robot_msg.h)(0x6A4A3350)
 I (..\Core\Inc\main.h)(0x6A3FF6B7)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x6A3FF6BB)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x6A3FF6B7)
@@ -1466,11 +1466,11 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x6A3FF6BC)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x6A3FF6BC)
-I (..\Users\Inc\app_state.h)(0x6A409476)
+I (..\Users\Inc\app_state.h)(0x6A4A400B)
 I (..\Users\Inc\app_init.h)(0x6A3FF6C1)
 I (..\Core\Inc\usart.h)(0x6A3FF6B8)
 I (..\Users\Inc\fifo_queue.h)(0x6A3FF6C1)
-I (..\Users\Inc\touchscreen.h)(0x6A3FF6C2)
+I (..\Users\Inc\touchscreen.h)(0x6A41D842)
 F (../radio/crc.c)(0x6A3FF6C1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/crc.o -MMD)
 I (..\radio\crc.h)(0x6A3FF6C1)
 F (../radio/myRadio.c)(0x6A3FF6C1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Users/Inc -I ../radio-I./RTE/_LController-IC:/Users/akamem/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-D__UVISION_VERSION="540" -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o lcontroller/myradio.o -MMD)

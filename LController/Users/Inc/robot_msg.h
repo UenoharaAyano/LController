@@ -45,12 +45,12 @@ typedef enum
 	Updown,		//顺/逆时针
 	ActReset,	//Act复位
 	PutCubeNum,	//放块号
-	LcdRefresh,	//LCD刷新
+	ClawUp,	//爪抬升
 	LockAngle,	//锁角
 
 	ThrowWeap,  //放弃武器——[3]
 	SetZero,	//置零
-	TakeCubePose,//取块姿势
+	TakeCubePose,//侧背
 	TakeRodPre,	//取杆预备
 	Arm,		//用的臂
 	InstPro,	//机构保护

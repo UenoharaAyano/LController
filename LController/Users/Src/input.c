@@ -202,9 +202,11 @@ uint8_t R_index = 0;
 #endif
 
 JScontrol_S JScontrolmsg;
-uint8_t Dead_zone = 120; // 摇杆死区
-short K = 1600;
-short Kw = 6200;        // 角速度系数
+uint8_t Dead_zone = 100; // 摇杆死区，默认快模式 Kv/8
+uint8_t Dead_zone_w = 250; // 角速度死区
+short Kv = 800;	// 默认速率倍数
+short Kw = 6200;	// 默认角速度倍率
+
 // 左边摇杆 - 控制X/Y速度
 void joystickLeft_scan()
 {
@@ -239,55 +241,50 @@ void joystickLeft_scan()
             L1val[3] = (L1.y > L1val[3]) ? L1.y : L1val[3];
         }
     #else
-        if (flag.JSfast_slow)
-            K = 1600;
-        else
-            K = 800;
-        // 将L1.x与L1.y映射到-K~K
+        // 将L1.x与L1.y映射到-Kv~Kv
         // X轴控制
         int32_t range_X_pos = L1val[1] - L1val[4];
         if (range_X_pos < 500) range_X_pos = 1800;
-        
+
         int32_t range_X_neg = L1val[4] - L1val[0];
         if (range_X_neg < 500) range_X_neg = 1800;
 
         if (L1.x > L1val[4])
         {
-            if (abs(K * (L1.x - L1val[4]) / range_X_pos) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kv * (L1.x - L1val[4]) / range_X_pos) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velX = 0;
             else
-                JScontrolmsg.velX = -(K * (L1.x - L1val[4]) / range_X_pos - Dead_zone);
+                JScontrolmsg.velX = -(Kv * (L1.x - L1val[4]) / range_X_pos - Dead_zone);
         }
         else
         {
-            if (abs(K * (L1val[4] - L1.x) / range_X_neg) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kv * (L1val[4] - L1.x) / range_X_neg) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velX = 0;
             else
-                JScontrolmsg.velX = K * (L1val[4] - L1.x) / range_X_neg - Dead_zone;
+                JScontrolmsg.velX = Kv * (L1val[4] - L1.x) / range_X_neg - Dead_zone;
         }
 
         // Y轴控制
         int32_t range_Y_pos = L1val[3] - L1val[5];
         if (range_Y_pos < 500) range_Y_pos = 1800;
-        
+
         int32_t range_Y_neg = L1val[5] - L1val[2];
         if (range_Y_neg < 500) range_Y_neg = 1800;
 
         if (L1.y > L1val[5])
         {
-            if (abs(K * (L1.y - L1val[5]) / range_Y_pos) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kv * (L1.y - L1val[5]) / range_Y_pos) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velY = 0;
             else
-                JScontrolmsg.velY = K * (L1.y - L1val[5]) / range_Y_pos - Dead_zone;
+                JScontrolmsg.velY = -(Kv * (L1.y - L1val[5]) / range_Y_pos - Dead_zone);
         }
         else
         {
-            if (abs(K * (L1val[5] - L1.y) / range_Y_neg) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kv * (L1val[5] - L1.y) / range_Y_neg) < Dead_zone) // 防止摇杆抖动
                 JScontrolmsg.velY = 0;
             else
-                JScontrolmsg.velY = -K * (L1val[5] - L1.y) / range_Y_neg + Dead_zone;
+                JScontrolmsg.velY = Kv * (L1val[5] - L1.y) / range_Y_neg - Dead_zone;
         }
-        JScontrolmsg.velY = -JScontrolmsg.velY; // Y轴方向取反
     #endif
 }
 // 右边摇杆--作为角速度控制
@@ -330,17 +327,17 @@ void joystickRight_scan()
 
         if (R.x > Rval[4])
         {
-            if (abs(Kw * (R.x - Rval[4]) / range_R_pos) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kw * (R.x - Rval[4]) / range_R_pos) < Dead_zone_w) // 防止摇杆抖动
                 JScontrolmsg.angW = 0;
             else
-                JScontrolmsg.angW = -Kw * (R.x - Rval[4]) / range_R_pos + Dead_zone;
+                JScontrolmsg.angW = -(Kw * (R.x - Rval[4]) / range_R_pos - Dead_zone_w);
         }
         else
         {
-            if (abs(Kw * (Rval[4] - R.x) / range_R_neg) < Dead_zone) // 防止摇杆抖动
+            if (abs(Kw * (Rval[4] - R.x) / range_R_neg) < Dead_zone_w) // 防止摇杆抖动
                 JScontrolmsg.angW = 0;
             else
-                JScontrolmsg.angW = Kw * (Rval[4] - R.x) / range_R_neg - Dead_zone;
+                JScontrolmsg.angW = Kw * (Rval[4] - R.x) / range_R_neg - Dead_zone_w;
         }
     #endif
 }
@@ -399,8 +396,14 @@ void R1_key_function(uint8_t keynum)
     }
     case 3:
     {
-       Press(LcdRefresh);
-		TxtmsgSend("LCD刷新");
+		BoolChange(ClawUp,!Boolback(ClawUp));
+		if(Boolback(ClawUp))
+//			Draw_Circle(25, 95, 3, RED);
+			flag.clawupflag=true;
+		else
+//			Draw_Circle(25, 95, 3, BLACK);
+			flag.clawupflag=false;
+		osDelay(10);
        break;
     }
     case 7:
@@ -483,16 +486,24 @@ void R1_key_function(uint8_t keynum)
         break;
     }
     case 19:
-    { // 左摇杆按键 - 快慢模式切换
-        flag.JSfast_slow = !flag.JSfast_slow;
-        osDelay(20);
-        Beep(1, 50);
-        if (flag.JSfast_slow)
-            TxtmsgSend("\"快模式 \"");
-        else
-            TxtmsgSend("\"慢模式 \"");
-        break;
-    }
+    {
+			flag.JSfast_slow = !flag.JSfast_slow;
+			osDelay(10);
+			Beep(1, 50);
+			if(flag.JSfast_slow)
+			{
+				TxtmsgSend("快模式");
+				Kv=Kv_fast;
+				Dead_zone=(Kv/8);
+			}
+			else
+			{
+				TxtmsgSend("慢模式");
+				Kv=Kv_slow;
+				Dead_zone=(Kv/8);
+			}
+			break;
+    } // 快慢模式切换
     case 20:
     { // 右边摇杆按键 - 刷新TFT副屏
 		flag.LCDfirstshow=true;

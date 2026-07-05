@@ -140,27 +140,27 @@ void R1C1dualswitch_deal(TjcMsg *tjcMsg)
 		BoolChange(Reverse, !Boolback(Reverse));
 		dualswitchvalIndex = 0;
 		return;
-	case 10:
+	case 9:
 		BoolChange(LockAngle, !Boolback(LockAngle));
 		dualswitchvalIndex =0;
 		return;
-	case 11:
+	case 10:
 		BoolChange(LockPoint, !Boolback(LockPoint));
 		dualswitchvalIndex =0;
 		return;
-	case 12:
+	case 11:
 		BoolChange(ITL, !Boolback(ITL));
 		dualswitchvalIndex =0;
 		return;
-	case 13:
+	case 12:
 		BoolChange(Arm, !Boolback(Arm));
 		dualswitchvalIndex =0;
 		return;
-	case 14:
+	case 13:
 		BoolChange(trustswitch, !Boolback(trustswitch));
 		dualswitchvalIndex =0;
 		return;
-	case 15:
+	case 14:
 		BoolChange(PutCubeNum, !Boolback(PutCubeNum));
 		dualswitchvalIndex =0;
 		return;

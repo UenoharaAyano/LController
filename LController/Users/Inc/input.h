@@ -4,6 +4,9 @@
 #include "main.h"
 #include "stdbool.h"
 
+#define Kv_fast 800
+#define Kv_slow 80
+
 #define joystickmeasureFlag 0 // 摇杆校准
 /*
 右侧3x3 矩阵键盘
@@ -66,7 +69,7 @@ typedef struct JScontrol_S
 } JScontrol_S;
 
 extern JScontrol_S JScontrolmsg; // 摇杆控制消息
-extern short K;                  // 左摇杆速度系数
+extern short Kv;                 // 左摇杆速度系数
 extern short Kw;                 // 右摇杆角速度系数
 
 bool JoystickInit();
